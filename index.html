@@ -79,12 +79,17 @@
 
     <section id="intro" class="intro-section">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-sm-6 col-lg-12">
-                    <h1 style="font-size:50px">IT <strong>KMUTNB</strong></h1>
-                    <h4 style="color:#caa669;font-size:20px"><strong>King Mongkut's University of Technology North Bangkok</strong></h4>
-                </div>
-            </div> -->
+          <div class="homepage-slideshow">
+    <div class="slide">
+        <img src="https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200" title="" alt=""/>
+    </div>
+    <div class="slide">
+        <img src="https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200" title="" alt=""/>
+    </div>
+    <div class="slide">
+        <img src="https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200" title="" alt=""/>
+    </div>
+</div>
         </div>
     </section>
 
@@ -428,6 +433,45 @@
         </div>
     </section>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 paddingtop-bottom">
+            <h6 class="heading7">GENERAL LINKS</h6>
+            <ul class="footer-ul">
+              <li><a class="page-scroll" href="#page-top"> หน้าหลัก</a></li>
+              <li><a class="page-scroll" href="#news"> ข่าวสาร</a></li>
+              <li><a class="page-scroll" href="#port"> ผลงานและกิจกรรม</a></li>
+              <li><a class="page-scroll" href="#people"> บุคลากร</a></li>
+              <li><a class="page-scroll" href="#contact"> ติดต่อ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 paddingtop-bottom">
+            <h6 class="heading7">EXTERNAL LINK</h6>
+            <ul class="footer-ul">
+              <li><a href="https://grade.icit.kmutnb.ac.th"> ระบบประเมินการสอน</a></li>
+              <li><a href="http://klogic.kmutnb.ac.th:8080/kris/tess/index.jsp"> การใช้งานข้อมูล ตารางสอน-ตารางสอบ</a></li>
+              <li><a href="http://klogic.kmutnb.ac.th:8080/kris/tess/dataQuery.jsp"> ตารางสอน-ตารางเรียน-ตารางสอบ-การใช้ห้องเรียน-ตอนเรียนที่เปิด</a></li>
+              <li><a href="http://klogic.kmutnb.ac.th:8080/kris/index.jsp"> ระบบงานทะเบียนนักศึกษา</a></li>
+              <li><a href="http://regis.kmutnb.ac.th/data_doc/calendar/intro_calendar.html"> ปฏิทินการศึกษา</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 paddingtop-bottom" style="vertical-align:center">
+            <a href="https://sites.google.com/a/fitm.kmutnb.ac.th/homefitm/"></a><img class="img-responsive" src="asset/image/fitm.png" width="200px" style="margin: auto;"/></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-12">
+      <p style="text-align:center;">© 2017 - By Method Team</p>
+    </div>
+  </div>
+</div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -560,12 +604,28 @@
             },
             1000: {
               items: 5,
-              loop: false,
+              loop: true,
               margin: 20
             }
           }
         });
       })
+    </script>
+
+    <script>
+    $(document).ready(function() {
+
+    $(".homepage-slideshow").owlCarousel({
+
+        navigation:         true,
+        slideSpeed:         300,
+        paginationSpeed:    400,
+        singleItem:         true,
+        transitionStyle:    'fade'
+
+    });
+
+});
     </script>
 
   </body>
