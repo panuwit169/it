@@ -161,11 +161,12 @@ of those sections to manage the look and feel of the site. */
   font-size: 16px;
 }
 
-.education-section {
+.people-section {
+  background-image: url('https://images7.alphacoders.com/355/355444.jpg');
     /*height: 100%;*/
-    padding: 100px 0 80px 0;
+    padding: 50px 0 80px 0;
     text-align: left;
-    background: #f5f5f5;
+    color: #000;
 }
 
 .work-section {
@@ -528,3 +529,6 @@ of those sections to manage the look and feel of the site. */
             max-width: 300px;
             max-height: 300px;
         }
+.item{
+    margin: 25px;
+}
